@@ -15,21 +15,21 @@ message = {
 }
 
 def decide_winner(user_choice, computer_choice):
-  print "User choice: %s" % (user_choice)
-  print "Computer choice: %s" % (computer_choice)
+  print("User choice: %s" % (user_choice))
+  print("Computer choice: %s" % (computer_choice))
   if user_choice == computer_choice:
-    print message["Tie"]
+    print(message["Tie"])
   elif user_choice == 'ROCK' and computer_choice == 'SCISSORS':
-    print message["Win"]
+    print(message["Win"])
   elif user_choice == 'SCISSORS' and computer_choice == 'PAPER':
-    print message["Win"]
+    print(message["Win"])
   elif user_choice == 'PAPER' and computer_choice == 'ROCK':
-    print message["Win"]
+    print(message["Win"])
   else:
-    print message["Lose"]
+    print(message["Lose"])
 
 def play_RPS():
-  user_choice = raw_input("Enter Rock, Paper, or Scissors: ")
+  user_choice = input("Enter Rock, Paper, or Scissors: ")
   user_choice = user_choice.upper()
   computer_choice = options[randint(0,2)]
   decide_winner(user_choice, computer_choice)
