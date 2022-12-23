@@ -1,14 +1,14 @@
 def rgb_hex():
   invalid_msg = "Error. Invalid Values Entered. Try Again."
-  red = int(raw_input("Enter red (R) value here: "))
+  red = int(input("Enter red (R) value here: "))
   if red < 0 or red > 255:
     print(invalid_msg)
     return
-  green = int(raw_input("Enter green (G) value here: "))
+  green = int(input("Enter green (G) value here: "))
   if green < 0 or green > 255:
     print(invalid_msg)
     return
-  blue = int(raw_input("Enter blue (B) value here: "))
+  blue = int(input("Enter blue (B) value here: "))
   if blue < 0 or blue > 255:
     print(invalid_msg)
     return
@@ -16,7 +16,7 @@ def rgb_hex():
   print("%s" % (hex(val)[2:]).upper())
 
 def hex_rgb():
-  hex_val = raw_input("Enter hexadcimal value here: ")
+  hex_val = input("Enter hexadcimal value here: ")
   if len(hex_val) != 6:
     print("Error. Invalid value entered. Try Again")
     return
@@ -32,7 +32,7 @@ def hex_rgb():
 
 def convert():
   while True:
-    option = raw_input("Enter 1 to convert RGB to HEX. Enter 2 to convert HEX to RBG. Enter X to Exit: ")
+    option = input("Enter 1 to convert RGB to HEX. Enter 2 to convert HEX to RBG. Enter X to Exit: ")
     if option == '1':
       print("RGB to HEX...")
       rgb_hex()
@@ -42,7 +42,7 @@ def convert():
     elif option == 'X' or 'x':
       break
     else: 
-      print "Error"
+      print("Error")
 
 
 convert()
