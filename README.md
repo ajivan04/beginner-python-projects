@@ -1,4 +1,4 @@
-# beginner-python-projects
+# Beginner Python Projects
 
-This repository contains all the different python projects that I coded as I was learning python. 
-These projects are begineer level however, they can all be upradeed to be more complex and challenging. 
+This repository contains the different python projects that I coded as I was learning python. 
+These projects are begineer level however, they can all be expanded to be more complex and challenging. 
